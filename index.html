@@ -2,35 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>流光按钮</title>
-<link rel="stylesheet" href="css/index.css">
-    <style>
- *{
-    margin:0;
-    padding:0;
-    }
-    </style>   
-    
+    <title>我坤，你家璐璐超酷！</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style type="text/css">
+        body{
+            background-color:#000;
+            }
+        a {
+            text-decoration: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+            background-size: 400%;
+            width: 400px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 50px;
+            z-index: 1;
+        }
+        a::before{
+            content:"";
+            poition:absolute;
+            left:-5px;
+            right:-5px;
+            top:-5px;
+            botom:-5px;
+            background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+            background-size: 400%;
+            border-radius: 50px;
+            fillter:blur(20px);
+            z-index: -1;
+        }
+        a:hover::before{
+            animation:sun 8s infinite;
+        }
+            a:hover{
+                animation:sun 8s infinite;
+            }
+            @keyframes sun {
+                100%{
+                    background-position: -400% 0;
+                }
+
+            }
+        *{
+            margin:0;
+            padding:0;
+        }
+    </style>
+
 </head>
 <body>
-    <a href="javascript:;">我们相爱吧！</a>
-    body{
-    background:#000;
-    }
- a{
-    text-decoration:none;
-    }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-    
+<a href="javascript:;">彦坤，我们相爱吧！</a>
+<audio src="./energe.mp3" autoplay="autopaly" loop="loop">
+</audio>
+
 </body>
 </html>
